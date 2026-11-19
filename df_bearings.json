@@ -1,0 +1,89 @@
+{
+  "1565.600": {
+    "freq_mhz": 1565.6,
+    "samples": [
+      {
+        "timestamp": "2026-11-19 09:10:09",
+        "heading_deg": 0.0,
+        "power_db": -73.15,
+        "lat": null,
+        "lon": null,
+        "note": "Live HackRF (3 sweeps, avg -82.56 dB)",
+        "source": "LIVE_HACKRF"
+      },
+      {
+        "timestamp": "2026-11-19 09:10:30",
+        "heading_deg": 45.0,
+        "power_db": -72.56,
+        "lat": null,
+        "lon": null,
+        "note": "Live HackRF (3 sweeps, avg -82.69 dB)",
+        "source": "LIVE_HACKRF"
+      },
+      {
+        "timestamp": "2026-11-19 09:10:37",
+        "heading_deg": 90.0,
+        "power_db": -75.78,
+        "lat": null,
+        "lon": null,
+        "note": "Live HackRF (3 sweeps, avg -82.29 dB)",
+        "source": "LIVE_HACKRF"
+      }
+    ],
+    "summary": {
+      "freq_mhz": 1565.6,
+      "sample_count": 3,
+      "unique_headings": 3,
+      "peak_bearing_deg": 36.8,
+      "peak_heading_raw_deg": 45.0,
+      "cardinal": "NE",
+      "null_bearing_deg": 90.0,
+      "null_cardinal": "E",
+      "peak_db": -72.56,
+      "min_db": -75.78,
+      "front_to_back_db": 3.22,
+      "confidence": "LOW-MEDIUM",
+      "distance": {
+        "est_rx_dbm": -98.56,
+        "environment": "suburban",
+        "environment_label": "Suburban / Mixed Outdoor-Indoor (n=2.8)",
+        "path_loss_exp": 2.8,
+        "primary_dist_m": 863.6,
+        "primary_dist_str": "864 m",
+        "primary_range_str": "233 m \u2013 3.78 km",
+        "primary_model": "Handset / IoT / Pulsed TX (~18 dBm EIRP)",
+        "proximity_zone": "LOCAL (0.6\u20132.5 km)",
+        "macro_tower_m": 23167.1,
+        "macro_tower_str": "~23.2 km (5.56 km\u201350.1 km)",
+        "portable_bts_m": 1965.4,
+        "portable_bts_str": "~1.97 km (535 m\u20139.32 km)",
+        "low_power_tx_m": 863.6,
+        "low_power_tx_str": "~864 m (233 m\u20133.78 km)"
+      },
+      "heading_bins": [
+        {
+          "heading_deg": 0.0,
+          "cardinal": "N",
+          "max_db": -73.15,
+          "avg_db": -73.15,
+          "count": 1
+        },
+        {
+          "heading_deg": 45.0,
+          "cardinal": "NE",
+          "max_db": -72.56,
+          "avg_db": -72.56,
+          "count": 1
+        },
+        {
+          "heading_deg": 90.0,
+          "cardinal": "E",
+          "max_db": -75.78,
+          "avg_db": -75.78,
+          "count": 1
+        }
+      ],
+      "updated_at": "2026-11-19 09:10:37"
+    }
+  }
+}

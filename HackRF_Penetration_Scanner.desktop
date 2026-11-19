@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=HackRF Smart Scanner
+Comment=Scan Sub-GHz Penetration Bands, 1-3 GHz 24/7 Carriers, Pulsed Signals & Mesh Networks
+Path=/home/craig/Desktop/hack_rf_scanner
+Exec=/home/craig/Desktop/hack_rf_scanner/auto_scanner.sh --menu
+Icon=utilities-terminal
+Terminal=true
+Categories=Utility;System;Security;

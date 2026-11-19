@@ -1,0 +1,2545 @@
+{
+  "generated_at": "2026-11-19 09:06:45",
+  "total_flagged_targets": 42,
+  "total_characteristic_matches": 45,
+  "recommended_sweep_ranges": "11:15,866:907,915:919,932:936,1224:1226,2397:2483",
+  "recommended_monitor_cmd": "python3 hackrf_penetration_scanner.py --ranges 11:15,866:907,915:919,932:936,1224:1226,2397:2483 -w 25000",
+  "flagged_targets": [
+    {
+      "center_mhz": 890.25,
+      "span_mhz": "888.350 - 893.050 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=33.6s) (Median \u0394t=33.58s, 18 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "880:900",
+      "characteristics": {
+        "est_bw_khz": 4750.0,
+        "peak_db": -4.21,
+        "avg_db": -19.97,
+        "std_db": 9.61,
+        "occupancy_pct": 15.8,
+        "window_persistence_pct": 33.3,
+        "burst_count": 18,
+        "median_pri_sec": 33.581,
+        "mean_pri_sec": 230.854,
+        "pri_jitter_sec": 390.316,
+        "estimated_mesh_nodes": 4,
+        "node_power_tiers_db": [
+          -4.2,
+          -12.1,
+          -20.8,
+          -43.0
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-16 21:51:38.611341",
+      "last_seen": "2026-11-18 11:08:27.111728"
+    },
+    {
+      "center_mhz": 897.05,
+      "span_mhz": "896.750 - 897.350 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 90/100, ~6 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=32.6s) (Median \u0394t=32.60s, 20 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "895:899",
+      "characteristics": {
+        "est_bw_khz": 650.0,
+        "peak_db": -5.85,
+        "avg_db": -22.21,
+        "std_db": 9.3,
+        "occupancy_pct": 17.5,
+        "window_persistence_pct": 33.3,
+        "burst_count": 20,
+        "median_pri_sec": 32.598,
+        "mean_pri_sec": 176.392,
+        "pri_jitter_sec": 347.478,
+        "estimated_mesh_nodes": 6,
+        "node_power_tiers_db": [
+          -5.8,
+          -14.2,
+          -20.5,
+          -26.2,
+          -31.8,
+          -48.8
+        ],
+        "relay_echoes": 2
+      },
+      "first_seen": "2026-11-16 21:50:49.419499",
+      "last_seen": "2026-11-18 10:26:35.139027"
+    },
+    {
+      "center_mhz": 14.0,
+      "span_mhz": "13.850 - 14.150 MHz",
+      "tier": "[DEEP: 1-30 MHz]",
+      "primary_flag": "COMPLIANCE_ALERT",
+      "flag_types": [
+        "COMPLIANCE_ALERT"
+      ],
+      "flag_reasons": [
+        "Regulatory/Technical Flag: [SUSPICIOUS / BW ANOMALY]"
+      ],
+      "verdict": "[SUSPICIOUS / BW ANOMALY]",
+      "signature": "20m Amateur / HF Utility Band",
+      "probable_device": "Intermittent Digital Packet / Telemetry Transmitter",
+      "monitor_window_mhz": "13:15",
+      "characteristics": {
+        "est_bw_khz": 350.0,
+        "peak_db": -17.85,
+        "avg_db": -17.85,
+        "std_db": 0.0,
+        "occupancy_pct": 0.0,
+        "window_persistence_pct": 100.0,
+        "burst_count": 1,
+        "median_pri_sec": 0.0,
+        "mean_pri_sec": 0.0,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 1,
+        "node_power_tiers_db": [
+          -17.9
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 08:11:43.307504",
+      "last_seen": "2026-11-18 08:11:43.307504"
+    },
+    {
+      "center_mhz": 891.5,
+      "span_mhz": "891.475 - 891.525 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=255.7s) (Median \u0394t=255.69s, 5 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "890:893",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -19.3,
+        "avg_db": -31.61,
+        "std_db": 9.74,
+        "occupancy_pct": 4.4,
+        "window_persistence_pct": 11.1,
+        "burst_count": 5,
+        "median_pri_sec": 255.693,
+        "mean_pri_sec": 255.693,
+        "pri_jitter_sec": 239.924,
+        "estimated_mesh_nodes": 4,
+        "node_power_tiers_db": [
+          -19.3,
+          -24.9,
+          -43.4,
+          -50.0
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:37:40.783834",
+      "last_seen": "2026-11-18 11:07:53.371104"
+    },
+    {
+      "center_mhz": 869.1,
+      "span_mhz": "868.800 - 869.150 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Pulsed Cadence: SCHEDULED / QUASI-PERIODIC PULSE (~817.6s) (Median \u0394t=817.60s, 5 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "Sub-GHz UHF (Cellular / Telemetry / Mesh)",
+      "probable_device": "868 MHz SRD Telemetry / Alarm / LoRa Packet Burst",
+      "monitor_window_mhz": "868:871",
+      "characteristics": {
+        "est_bw_khz": 400.0,
+        "peak_db": -19.66,
+        "avg_db": -29.9,
+        "std_db": 9.44,
+        "occupancy_pct": 5.3,
+        "window_persistence_pct": 13.9,
+        "burst_count": 5,
+        "median_pri_sec": 817.596,
+        "mean_pri_sec": 869.075,
+        "pri_jitter_sec": 300.688,
+        "estimated_mesh_nodes": 3,
+        "node_power_tiers_db": [
+          -19.7,
+          -30.9,
+          -42.8
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 08:12:00.314631",
+      "last_seen": "2026-11-18 10:33:37.763541"
+    },
+    {
+      "center_mhz": 868.4,
+      "span_mhz": "868.150 - 868.550 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 65/100, ~2 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=587.7s) (Median \u0394t=587.69s, 4 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "868 MHz Core ISM (LoRaWAN EU868 / Zigbee 868 Mesh / Smart Meters)",
+      "probable_device": "Z-Wave EU Smart Home Mesh Packet / Routed Ack",
+      "monitor_window_mhz": "867:870",
+      "characteristics": {
+        "est_bw_khz": 450.0,
+        "peak_db": -20.39,
+        "avg_db": -25.32,
+        "std_db": 4.41,
+        "occupancy_pct": 4.4,
+        "window_persistence_pct": 8.3,
+        "burst_count": 4,
+        "median_pri_sec": 587.694,
+        "mean_pri_sec": 587.694,
+        "pri_jitter_sec": 574.128,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -20.4,
+          -34.9
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 10:14:09.708478",
+      "last_seen": "2026-11-18 11:06:56.680580"
+    },
+    {
+      "center_mhz": 899.4,
+      "span_mhz": "897.750 - 899.700 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Repeating Multi-Session Bursts (2 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "895:904",
+      "characteristics": {
+        "est_bw_khz": 2000.0,
+        "peak_db": -20.51,
+        "avg_db": -33.45,
+        "std_db": 12.94,
+        "occupancy_pct": 1.8,
+        "window_persistence_pct": 5.6,
+        "burst_count": 2,
+        "median_pri_sec": 0.0,
+        "mean_pri_sec": 0.0,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -20.5,
+          -46.4
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 10:15:52.359181",
+      "last_seen": "2026-11-18 11:08:43.506694"
+    },
+    {
+      "center_mhz": 881.4,
+      "span_mhz": "880.550 - 881.550 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=16.9s) (Median \u0394t=16.87s, 3 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "879:884",
+      "characteristics": {
+        "est_bw_khz": 1050.0,
+        "peak_db": -20.99,
+        "avg_db": -33.6,
+        "std_db": 7.92,
+        "occupancy_pct": 3.5,
+        "window_persistence_pct": 5.6,
+        "burst_count": 3,
+        "median_pri_sec": 16.87,
+        "mean_pri_sec": 16.87,
+        "pri_jitter_sec": 16.711,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -21.0,
+          -33.5
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 11:07:53.371104",
+      "last_seen": "2026-11-18 11:08:27.188631"
+    },
+    {
+      "center_mhz": 2436.15,
+      "span_mhz": "2427.000 - 2446.200 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "24/7_CONTINUOUS",
+      "flag_types": [
+        "24/7_CONTINUOUS",
+        "MESH_TOPOLOGY",
+        "COMPLIANCE_ALERT"
+      ],
+      "flag_reasons": [
+        "Round-the-Clock 24/7 Carrier (21.5% occupancy, 94% window persistence)",
+        "[CONFIRMED MESH NETWORK] (Score 100/100, ~5 nodes)",
+        "Regulatory/Technical Flag: [ILLEGAL / NON-COMPLIANT 24/7 TX]"
+      ],
+      "verdict": "[ILLEGAL / NON-COMPLIANT 24/7 TX]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 17 (2435 MHz) | Wi-Fi Center Ch 6 (2437 MHz)",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (Zigbee/Thread Mesh Ch 17 (2435 MHz) | Wi-Fi Center Ch 6 (2437 MHz))",
+      "monitor_window_mhz": "2397:2475",
+      "characteristics": {
+        "est_bw_khz": 19250.0,
+        "peak_db": -21.83,
+        "avg_db": -47.43,
+        "std_db": 2.6,
+        "occupancy_pct": 21.5,
+        "window_persistence_pct": 93.5,
+        "burst_count": 1326,
+        "median_pri_sec": 0.629,
+        "mean_pri_sec": 2.747,
+        "pri_jitter_sec": 25.141,
+        "estimated_mesh_nodes": 5,
+        "node_power_tiers_db": [
+          -21.8,
+          -32.0,
+          -37.6,
+          -43.1,
+          -48.6
+        ],
+        "relay_echoes": 80
+      },
+      "first_seen": "2026-11-18 08:41:40.336884",
+      "last_seen": "2026-11-18 20:42:51.055713"
+    },
+    {
+      "center_mhz": 890.8,
+      "span_mhz": "890.775 - 890.825 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=174.8s) (Median \u0394t=174.85s, 2 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "889:892",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -22.51,
+        "avg_db": -29.43,
+        "std_db": 7.14,
+        "occupancy_pct": 1.8,
+        "window_persistence_pct": 5.6,
+        "burst_count": 2,
+        "median_pri_sec": 174.846,
+        "mean_pri_sec": 174.846,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -22.5,
+          -29.3
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 10:12:57.512969",
+      "last_seen": "2026-11-18 10:15:52.359181"
+    },
+    {
+      "center_mhz": 898.2,
+      "span_mhz": "898.175 - 898.225 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 90/100, ~3 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=1.5s) (Median \u0394t=1.51s, 10 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "GSM/LTE Band 8 TDMA Handset Uplink Burst Train (or US915 FHSS Mesh)",
+      "monitor_window_mhz": "897:900",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -22.74,
+        "avg_db": -30.48,
+        "std_db": 6.38,
+        "occupancy_pct": 8.8,
+        "window_persistence_pct": 8.3,
+        "burst_count": 10,
+        "median_pri_sec": 1.514,
+        "mean_pri_sec": 178.647,
+        "pri_jitter_sec": 384.289,
+        "estimated_mesh_nodes": 3,
+        "node_power_tiers_db": [
+          -22.7,
+          -29.9,
+          -44.8
+        ],
+        "relay_echoes": 1
+      },
+      "first_seen": "2026-11-18 09:49:04.535979",
+      "last_seen": "2026-11-18 10:15:52.359181"
+    },
+    {
+      "center_mhz": 903.4,
+      "span_mhz": "902.600 - 903.500 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 65/100, ~2 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=8.4s) (Median \u0394t=8.37s, 4 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "901:906",
+      "characteristics": {
+        "est_bw_khz": 950.0,
+        "peak_db": -24.44,
+        "avg_db": -32.59,
+        "std_db": 6.99,
+        "occupancy_pct": 3.5,
+        "window_persistence_pct": 5.6,
+        "burst_count": 4,
+        "median_pri_sec": 8.366,
+        "mean_pri_sec": 8.366,
+        "pri_jitter_sec": 7.717,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -24.4,
+          -31.6
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:37:25.251644",
+      "last_seen": "2026-11-18 10:15:35.666884"
+    },
+    {
+      "center_mhz": 2439.95,
+      "span_mhz": "2439.925 - 2439.975 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 100/100, ~4 nodes)",
+        "Pulsed Cadence: RAPID PULSE TRAIN (PRI ~737 ms) (Median \u0394t=0.74s, 293 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 18 (2440 MHz)",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (Zigbee/Thread Mesh Ch 18 (2440 MHz))",
+      "monitor_window_mhz": "2438:2441",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -25.63,
+        "avg_db": -47.06,
+        "std_db": 2.78,
+        "occupancy_pct": 5.0,
+        "window_persistence_pct": 56.5,
+        "burst_count": 293,
+        "median_pri_sec": 0.737,
+        "mean_pri_sec": 10.897,
+        "pri_jitter_sec": 60.039,
+        "estimated_mesh_nodes": 4,
+        "node_power_tiers_db": [
+          -25.6,
+          -34.5,
+          -41.8,
+          -47.3
+        ],
+        "relay_echoes": 18
+      },
+      "first_seen": "2026-11-18 09:37:46.170988",
+      "last_seen": "2026-11-18 20:42:51.055713"
+    },
+    {
+      "center_mhz": 880.8,
+      "span_mhz": "880.775 - 880.825 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 75/100, ~2 nodes)",
+        "Pulsed Cadence: RAPID PULSE TRAIN (PRI ~160 ms) (Median \u0394t=0.16s, 2 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "GSM/LTE Band 8 TDMA Handset Uplink Burst Train (or US915 FHSS Mesh)",
+      "monitor_window_mhz": "879:882",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -26.13,
+        "avg_db": -34.73,
+        "std_db": 8.6,
+        "occupancy_pct": 1.8,
+        "window_persistence_pct": 2.8,
+        "burst_count": 2,
+        "median_pri_sec": 0.16,
+        "mean_pri_sec": 0.16,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -26.1,
+          -43.3
+        ],
+        "relay_echoes": 1
+      },
+      "first_seen": "2026-11-18 11:07:53.371104",
+      "last_seen": "2026-11-18 11:07:53.530674"
+    },
+    {
+      "center_mhz": 888.75,
+      "span_mhz": "888.725 - 888.775 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=16.9s) (Median \u0394t=16.95s, 5 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "887:890",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -26.15,
+        "avg_db": -38.95,
+        "std_db": 7.38,
+        "occupancy_pct": 4.4,
+        "window_persistence_pct": 8.3,
+        "burst_count": 5,
+        "median_pri_sec": 16.948,
+        "mean_pri_sec": 170.462,
+        "pri_jitter_sec": 217.936,
+        "estimated_mesh_nodes": 4,
+        "node_power_tiers_db": [
+          -26.1,
+          -32.8,
+          -41.7,
+          -48.5
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:37:40.783834",
+      "last_seen": "2026-11-18 10:23:51.028153"
+    },
+    {
+      "center_mhz": 2433.1,
+      "span_mhz": "2433.075 - 2433.125 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 100/100, ~4 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=1.2s) (Median \u0394t=1.24s, 119 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links)",
+      "probable_device": "2.4 GHz Wi-Fi / Zigbee / FHSS Drone or IoT Packet Bursts",
+      "monitor_window_mhz": "2432:2435",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -27.28,
+        "avg_db": -47.73,
+        "std_db": 3.1,
+        "occupancy_pct": 2.0,
+        "window_persistence_pct": 30.4,
+        "burst_count": 119,
+        "median_pri_sec": 1.239,
+        "mean_pri_sec": 21.039,
+        "pri_jitter_sec": 155.653,
+        "estimated_mesh_nodes": 4,
+        "node_power_tiers_db": [
+          -27.3,
+          -34.6,
+          -40.6,
+          -46.3
+        ],
+        "relay_echoes": 3
+      },
+      "first_seen": "2026-11-18 09:51:38.795481",
+      "last_seen": "2026-11-18 20:43:20.822274"
+    },
+    {
+      "center_mhz": 889.35,
+      "span_mhz": "889.325 - 889.375 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Pulsed Cadence: STRICT PERIODIC BEACON (Every 16.4s) (Median \u0394t=16.36s, 4 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "888:891",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -28.11,
+        "avg_db": -40.97,
+        "std_db": 7.58,
+        "occupancy_pct": 3.5,
+        "window_persistence_pct": 5.6,
+        "burst_count": 4,
+        "median_pri_sec": 16.358,
+        "mean_pri_sec": 16.358,
+        "pri_jitter_sec": 0.59,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -28.1,
+          -43.0
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:37:40.783834",
+      "last_seen": "2026-11-18 10:15:52.359181"
+    },
+    {
+      "center_mhz": 2443.95,
+      "span_mhz": "2443.925 - 2443.975 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 80/100, ~3 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=43.0s) (Median \u0394t=43.04s, 10 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 19 (2445 MHz)",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (Zigbee/Thread Mesh Ch 19 (2445 MHz))",
+      "monitor_window_mhz": "2442:2445",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -28.27,
+        "avg_db": -42.4,
+        "std_db": 7.49,
+        "occupancy_pct": 0.2,
+        "window_persistence_pct": 15.2,
+        "burst_count": 10,
+        "median_pri_sec": 43.039,
+        "mean_pri_sec": 40.508,
+        "pri_jitter_sec": 40.045,
+        "estimated_mesh_nodes": 3,
+        "node_power_tiers_db": [
+          -28.3,
+          -34.8,
+          -47.1
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:58:13.532243",
+      "last_seen": "2026-11-18 20:42:09.334701"
+    },
+    {
+      "center_mhz": 904.45,
+      "span_mhz": "904.350 - 905.500 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 80/100, ~3 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=8.4s) (Median \u0394t=8.37s, 4 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "902:907",
+      "characteristics": {
+        "est_bw_khz": 1200.0,
+        "peak_db": -29.49,
+        "avg_db": -38.06,
+        "std_db": 7.09,
+        "occupancy_pct": 3.5,
+        "window_persistence_pct": 5.6,
+        "burst_count": 4,
+        "median_pri_sec": 8.366,
+        "mean_pri_sec": 8.366,
+        "pri_jitter_sec": 7.717,
+        "estimated_mesh_nodes": 3,
+        "node_power_tiers_db": [
+          -29.5,
+          -37.0,
+          -46.4
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:37:25.251644",
+      "last_seen": "2026-11-18 10:15:35.666884"
+    },
+    {
+      "center_mhz": 2429.9,
+      "span_mhz": "2429.875 - 2429.925 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 100/100, ~3 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=35.0s) (Median \u0394t=34.97s, 19 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 16 (2430 MHz)",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (Zigbee/Thread Mesh Ch 16 (2430 MHz))",
+      "monitor_window_mhz": "2428:2431",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -30.42,
+        "avg_db": -45.37,
+        "std_db": 5.47,
+        "occupancy_pct": 0.3,
+        "window_persistence_pct": 26.1,
+        "burst_count": 19,
+        "median_pri_sec": 34.967,
+        "mean_pri_sec": 131.369,
+        "pri_jitter_sec": 246.716,
+        "estimated_mesh_nodes": 3,
+        "node_power_tiers_db": [
+          -30.4,
+          -38.6,
+          -46.2
+        ],
+        "relay_echoes": 1
+      },
+      "first_seen": "2026-11-18 09:48:47.409929",
+      "last_seen": "2026-11-18 20:42:09.334701"
+    },
+    {
+      "center_mhz": 2480.2,
+      "span_mhz": "2479.500 - 2480.550 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 65/100, ~2 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=681.3s) (Median \u0394t=681.32s, 3 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> BLE Mesh/Beacon Adv Ch 39 (2480 MHz) | Zigbee/Thread Mesh Ch 26 (2480 MHz) [Primary Non-WiFi Mesh Ch]",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (BLE Mesh/Beacon Adv Ch 39 (2480 MHz) | Zigbee/Thread Mesh Ch 26 (2480 MHz) [Primary Non-WiFi Mesh Ch])",
+      "monitor_window_mhz": "2478:2483",
+      "characteristics": {
+        "est_bw_khz": 1100.0,
+        "peak_db": -30.47,
+        "avg_db": -36.98,
+        "std_db": 5.64,
+        "occupancy_pct": 0.0,
+        "window_persistence_pct": 6.5,
+        "burst_count": 3,
+        "median_pri_sec": 681.316,
+        "mean_pri_sec": 681.316,
+        "pri_jitter_sec": 651.902,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -30.5,
+          -39.5
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:52:29.953642",
+      "last_seen": "2026-11-18 10:15:12.584889"
+    },
+    {
+      "center_mhz": 870.2,
+      "span_mhz": "870.050 - 870.350 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=620.9s) (Median \u0394t=620.94s, 6 bursts)"
+      ],
+      "verdict": "[COMPLIANT / TRUE DEVICE]",
+      "signature": "870-876 MHz Short-Range Devices / Smart Grid Mesh (or US/AU B5 Cellular DL)",
+      "probable_device": "Intermittent Digital Packet / Telemetry Transmitter",
+      "monitor_window_mhz": "869:872",
+      "characteristics": {
+        "est_bw_khz": 350.0,
+        "peak_db": -30.7,
+        "avg_db": -38.64,
+        "std_db": 5.81,
+        "occupancy_pct": 5.3,
+        "window_persistence_pct": 11.1,
+        "burst_count": 6,
+        "median_pri_sec": 620.937,
+        "mean_pri_sec": 554.017,
+        "pri_jitter_sec": 525.135,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -30.7,
+          -42.8
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:37:25.015766",
+      "last_seen": "2026-11-18 10:23:35.102570"
+    },
+    {
+      "center_mhz": 2469.55,
+      "span_mhz": "2468.600 - 2471.300 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 100/100, ~4 nodes)",
+        "Pulsed Cadence: RAPID PULSE TRAIN (PRI ~757 ms) (Median \u0394t=0.76s, 78 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 24 (2470 MHz)",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (Zigbee/Thread Mesh Ch 24 (2470 MHz))",
+      "monitor_window_mhz": "2464:2476",
+      "characteristics": {
+        "est_bw_khz": 2750.0,
+        "peak_db": -31.05,
+        "avg_db": -44.63,
+        "std_db": 4.88,
+        "occupancy_pct": 1.2,
+        "window_persistence_pct": 8.7,
+        "burst_count": 78,
+        "median_pri_sec": 0.757,
+        "mean_pri_sec": 1.405,
+        "pri_jitter_sec": 2.102,
+        "estimated_mesh_nodes": 4,
+        "node_power_tiers_db": [
+          -31.1,
+          -37.9,
+          -43.6,
+          -49.1
+        ],
+        "relay_echoes": 26
+      },
+      "first_seen": "2026-11-18 11:09:01.103202",
+      "last_seen": "2026-11-18 20:43:15.219088"
+    },
+    {
+      "center_mhz": 905.35,
+      "span_mhz": "905.325 - 905.375 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 100/100, ~2 nodes)",
+        "Pulsed Cadence: RAPID PULSE TRAIN (PRI ~649 ms) (Median \u0394t=0.65s, 2 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "GSM/LTE Band 8 TDMA Handset Uplink Burst Train (or US915 FHSS Mesh)",
+      "monitor_window_mhz": "904:907",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -32.9,
+        "avg_db": -39.1,
+        "std_db": 5.97,
+        "occupancy_pct": 1.8,
+        "window_persistence_pct": 2.8,
+        "burst_count": 2,
+        "median_pri_sec": 0.649,
+        "mean_pri_sec": 0.649,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -32.9,
+          -43.5
+        ],
+        "relay_echoes": 1
+      },
+      "first_seen": "2026-11-18 10:15:35.018134",
+      "last_seen": "2026-11-18 10:15:35.666884"
+    },
+    {
+      "center_mhz": 892.5,
+      "span_mhz": "892.475 - 892.525 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=33.7s) (Median \u0394t=33.74s, 5 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "891:894",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -33.39,
+        "avg_db": -41.87,
+        "std_db": 5.0,
+        "occupancy_pct": 4.4,
+        "window_persistence_pct": 11.1,
+        "burst_count": 5,
+        "median_pri_sec": 33.741,
+        "mean_pri_sec": 63.88,
+        "pri_jitter_sec": 55.816,
+        "estimated_mesh_nodes": 3,
+        "node_power_tiers_db": [
+          -33.4,
+          -41.8,
+          -49.0
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 10:12:57.512969",
+      "last_seen": "2026-11-18 11:08:27.111728"
+    },
+    {
+      "center_mhz": 876.95,
+      "span_mhz": "876.900 - 877.000 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=16.9s) (Median \u0394t=16.95s, 2 bursts)"
+      ],
+      "verdict": "[COMPLIANT / TRUE DEVICE]",
+      "signature": "870-876 MHz Short-Range Devices / Smart Grid Mesh (or US/AU B5 Cellular DL)",
+      "probable_device": "Automated Periodic Telemetry Beacon (Fires every ~16.9s)",
+      "monitor_window_mhz": "875:878",
+      "characteristics": {
+        "est_bw_khz": 150.0,
+        "peak_db": -37.98,
+        "avg_db": -39.64,
+        "std_db": 1.86,
+        "occupancy_pct": 1.8,
+        "window_persistence_pct": 2.8,
+        "burst_count": 2,
+        "median_pri_sec": 16.948,
+        "mean_pri_sec": 16.948,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 1,
+        "node_power_tiers_db": [
+          -38.0
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:37:24.307899",
+      "last_seen": "2026-11-18 09:37:41.255722"
+    },
+    {
+      "center_mhz": 2414.0,
+      "span_mhz": "2412.850 - 2415.300 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 65/100, ~2 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=332.3s) (Median \u0394t=332.35s, 5 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 13 (2415 MHz) | Wi-Fi Center Ch 1 (2412 MHz)",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (Zigbee/Thread Mesh Ch 13 (2415 MHz) | Wi-Fi Center Ch 1 (2412 MHz))",
+      "monitor_window_mhz": "2409:2419",
+      "characteristics": {
+        "est_bw_khz": 2500.0,
+        "peak_db": -38.63,
+        "avg_db": -43.87,
+        "std_db": 3.51,
+        "occupancy_pct": 0.1,
+        "window_persistence_pct": 10.9,
+        "burst_count": 5,
+        "median_pri_sec": 332.346,
+        "mean_pri_sec": 332.346,
+        "pri_jitter_sec": 247.292,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -38.6,
+          -47.7
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 10:23:00.322049",
+      "last_seen": "2026-11-18 20:43:17.794366"
+    },
+    {
+      "center_mhz": 2459.8,
+      "span_mhz": "2457.250 - 2461.600 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 65/100, ~2 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=300.1s) (Median \u0394t=300.13s, 8 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 22 (2460 MHz) | Wi-Fi Center Ch 11 (2462 MHz)",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (Zigbee/Thread Mesh Ch 22 (2460 MHz) | Wi-Fi Center Ch 11 (2462 MHz))",
+      "monitor_window_mhz": "2451:2469",
+      "characteristics": {
+        "est_bw_khz": 4400.0,
+        "peak_db": -38.99,
+        "avg_db": -47.3,
+        "std_db": 2.97,
+        "occupancy_pct": 0.1,
+        "window_persistence_pct": 17.4,
+        "burst_count": 8,
+        "median_pri_sec": 300.126,
+        "mean_pri_sec": 375.947,
+        "pri_jitter_sec": 367.099,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -39.0,
+          -45.7
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:47:01.122475",
+      "last_seen": "2026-11-18 20:41:42.929913"
+    },
+    {
+      "center_mhz": 12.0,
+      "span_mhz": "11.850 - 12.050 MHz",
+      "tier": "[DEEP: 1-30 MHz]",
+      "primary_flag": "COMPLIANCE_ALERT",
+      "flag_types": [
+        "COMPLIANCE_ALERT"
+      ],
+      "flag_reasons": [
+        "Regulatory/Technical Flag: [SUSPICIOUS / BW ANOMALY]"
+      ],
+      "verdict": "[SUSPICIOUS / BW ANOMALY]",
+      "signature": "HF Deep Inductive / Shortwave Utility",
+      "probable_device": "Intermittent Digital Packet / Telemetry Transmitter",
+      "monitor_window_mhz": "11:13",
+      "characteristics": {
+        "est_bw_khz": 250.0,
+        "peak_db": -40.3,
+        "avg_db": -40.3,
+        "std_db": 0.0,
+        "occupancy_pct": 0.0,
+        "window_persistence_pct": 100.0,
+        "burst_count": 1,
+        "median_pri_sec": 0.0,
+        "mean_pri_sec": 0.0,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 1,
+        "node_power_tiers_db": [
+          -40.3
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 08:11:43.307504",
+      "last_seen": "2026-11-18 08:11:43.307504"
+    },
+    {
+      "center_mhz": 2451.95,
+      "span_mhz": "2447.500 - 2452.150 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY"
+      ],
+      "flag_reasons": [
+        "[PROBABLE MESH / MULTI-NODE RELAY] (Score 40/100, ~1 nodes)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links)",
+      "probable_device": "2.4 GHz Wi-Fi / Zigbee / FHSS Drone or IoT Packet Bursts",
+      "monitor_window_mhz": "2442:2462",
+      "characteristics": {
+        "est_bw_khz": 4700.0,
+        "peak_db": -40.77,
+        "avg_db": -40.77,
+        "std_db": 0.0,
+        "occupancy_pct": 0.0,
+        "window_persistence_pct": 2.2,
+        "burst_count": 1,
+        "median_pri_sec": 0.0,
+        "mean_pri_sec": 0.0,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 1,
+        "node_power_tiers_db": [
+          -40.8
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 20:42:26.125456",
+      "last_seen": "2026-11-18 20:42:26.125456"
+    },
+    {
+      "center_mhz": 2421.0,
+      "span_mhz": "2417.750 - 2421.100 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 65/100, ~2 nodes)",
+        "Repeating Multi-Session Bursts (2 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 14 (2420 MHz)",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (Zigbee/Thread Mesh Ch 14 (2420 MHz))",
+      "monitor_window_mhz": "2414:2428",
+      "characteristics": {
+        "est_bw_khz": 3400.0,
+        "peak_db": -41.5,
+        "avg_db": -47.08,
+        "std_db": 3.95,
+        "occupancy_pct": 0.0,
+        "window_persistence_pct": 4.3,
+        "burst_count": 2,
+        "median_pri_sec": 0.0,
+        "mean_pri_sec": 0.0,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -41.5,
+          -49.8
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:55:40.510481",
+      "last_seen": "2026-11-18 11:07:00.337517"
+    },
+    {
+      "center_mhz": 2474.95,
+      "span_mhz": "2473.450 - 2476.400 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 65/100, ~2 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=749.9s) (Median \u0394t=749.90s, 4 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 25 (2475 MHz) [Primary Non-WiFi Mesh Ch]",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (Zigbee/Thread Mesh Ch 25 (2475 MHz) [Primary Non-WiFi Mesh Ch])",
+      "monitor_window_mhz": "2468:2481",
+      "characteristics": {
+        "est_bw_khz": 3000.0,
+        "peak_db": -41.58,
+        "avg_db": -46.74,
+        "std_db": 2.92,
+        "occupancy_pct": 0.1,
+        "window_persistence_pct": 8.7,
+        "burst_count": 4,
+        "median_pri_sec": 749.903,
+        "mean_pri_sec": 749.903,
+        "pri_jitter_sec": 689.897,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -41.6,
+          -47.3
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 08:41:20.931465",
+      "last_seen": "2026-11-18 10:21:41.225611"
+    },
+    {
+      "center_mhz": 2426.05,
+      "span_mhz": "2422.900 - 2426.750 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 65/100, ~2 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=71.5s) (Median \u0394t=71.55s, 4 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> BLE Mesh/Beacon Adv Ch 38 (2426 MHz) | Zigbee/Thread Mesh Ch 15 (2425 MHz) [Primary Non-WiFi Mesh Ch]",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (BLE Mesh/Beacon Adv Ch 38 (2426 MHz) | Zigbee/Thread Mesh Ch 15 (2425 MHz) [Primary Non-WiFi Mesh Ch])",
+      "monitor_window_mhz": "2418:2434",
+      "characteristics": {
+        "est_bw_khz": 3900.0,
+        "peak_db": -41.96,
+        "avg_db": -46.52,
+        "std_db": 2.22,
+        "occupancy_pct": 0.1,
+        "window_persistence_pct": 8.7,
+        "burst_count": 4,
+        "median_pri_sec": 71.547,
+        "mean_pri_sec": 71.547,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -42.0,
+          -48.4
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:49:20.637063",
+      "last_seen": "2026-11-18 11:07:40.427527"
+    },
+    {
+      "center_mhz": 2464.15,
+      "span_mhz": "2462.600 - 2466.050 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[CONFIRMED MESH NETWORK] (Score 65/100, ~2 nodes)",
+        "Repeating Multi-Session Bursts (2 bursts)"
+      ],
+      "verdict": "[CONFIRMED MESH NETWORK]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 23 (2465 MHz) | Wi-Fi Center Ch 11 (2462 MHz)",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (Zigbee/Thread Mesh Ch 23 (2465 MHz) | Wi-Fi Center Ch 11 (2462 MHz))",
+      "monitor_window_mhz": "2457:2472",
+      "characteristics": {
+        "est_bw_khz": 3500.0,
+        "peak_db": -42.72,
+        "avg_db": -46.2,
+        "std_db": 3.48,
+        "occupancy_pct": 0.0,
+        "window_persistence_pct": 4.3,
+        "burst_count": 2,
+        "median_pri_sec": 0.0,
+        "mean_pri_sec": 0.0,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 2,
+        "node_power_tiers_db": [
+          -42.7,
+          -49.7
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:53:41.226801",
+      "last_seen": "2026-11-18 20:42:19.873235"
+    },
+    {
+      "center_mhz": 934.35,
+      "span_mhz": "934.350 - 934.500 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Pulsed Cadence: RAPID PULSE TRAIN (PRI ~629 ms) (Median \u0394t=0.63s, 4 bursts)"
+      ],
+      "verdict": "[COMPLIANT / TRUE DEVICE]",
+      "signature": "E-GSM 900 / LTE Band 8 Cellular Base Station Downlink (UK/EU/AU 24/7 Carrier)",
+      "probable_device": "Intermittent Digital Packet / Telemetry Transmitter",
+      "monitor_window_mhz": "933:936",
+      "characteristics": {
+        "est_bw_khz": 200.0,
+        "peak_db": -43.35,
+        "avg_db": -47.4,
+        "std_db": 1.78,
+        "occupancy_pct": 4.4,
+        "window_persistence_pct": 2.8,
+        "burst_count": 4,
+        "median_pri_sec": 0.629,
+        "mean_pri_sec": 1.638,
+        "pri_jitter_sec": 1.497,
+        "estimated_mesh_nodes": 1,
+        "node_power_tiers_db": [
+          -43.4
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:55:37.128585",
+      "last_seen": "2026-11-18 09:55:42.043846"
+    },
+    {
+      "center_mhz": 2417.75,
+      "span_mhz": "2417.600 - 2417.600 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[PROBABLE MESH / MULTI-NODE RELAY] (Score 40/100, ~1 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=799.9s) (Median \u0394t=799.94s, 4 bursts)"
+      ],
+      "verdict": "[COMPLIANT / TRUE DEVICE]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links)",
+      "probable_device": "2.4 GHz Wi-Fi / Zigbee / FHSS Drone or IoT Packet Bursts",
+      "monitor_window_mhz": "2416:2419",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -43.92,
+        "avg_db": -47.15,
+        "std_db": 2.14,
+        "occupancy_pct": 0.1,
+        "window_persistence_pct": 8.7,
+        "burst_count": 4,
+        "median_pri_sec": 799.94,
+        "mean_pri_sec": 799.94,
+        "pri_jitter_sec": 779.866,
+        "estimated_mesh_nodes": 1,
+        "node_power_tiers_db": [
+          -43.9
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:55:20.514954",
+      "last_seen": "2026-11-18 11:07:00.337517"
+    },
+    {
+      "center_mhz": 888.1,
+      "span_mhz": "887.950 - 888.200 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Repeating Multi-Session Bursts (2 bursts)"
+      ],
+      "verdict": "[COMPLIANT / TRUE DEVICE]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "887:890",
+      "characteristics": {
+        "est_bw_khz": 300.0,
+        "peak_db": -45.17,
+        "avg_db": -46.95,
+        "std_db": 1.78,
+        "occupancy_pct": 1.8,
+        "window_persistence_pct": 5.6,
+        "burst_count": 2,
+        "median_pri_sec": 0.0,
+        "mean_pri_sec": 0.0,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 1,
+        "node_power_tiers_db": [
+          -45.2
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 10:15:35.411313",
+      "last_seen": "2026-11-18 11:08:43.506694"
+    },
+    {
+      "center_mhz": 2456.2,
+      "span_mhz": "2452.750 - 2456.700 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[PROBABLE MESH / MULTI-NODE RELAY] (Score 40/100, ~1 nodes)",
+        "Pulsed Cadence: SCHEDULED / QUASI-PERIODIC PULSE (~919.8s) (Median \u0394t=919.75s, 4 bursts)"
+      ],
+      "verdict": "[COMPLIANT / TRUE DEVICE]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 21 (2455 MHz)",
+      "probable_device": "IEEE 802.15.4 Pulsed Mesh Traffic (Zigbee/Thread Mesh Ch 21 (2455 MHz))",
+      "monitor_window_mhz": "2448:2465",
+      "characteristics": {
+        "est_bw_khz": 4000.0,
+        "peak_db": -45.29,
+        "avg_db": -48.04,
+        "std_db": 1.46,
+        "occupancy_pct": 0.1,
+        "window_persistence_pct": 8.7,
+        "burst_count": 4,
+        "median_pri_sec": 919.755,
+        "mean_pri_sec": 679.837,
+        "pri_jitter_sec": 382.416,
+        "estimated_mesh_nodes": 1,
+        "node_power_tiers_db": [
+          -45.3
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:58:41.195563",
+      "last_seen": "2026-11-18 10:32:40.707155"
+    },
+    {
+      "center_mhz": 2447.8,
+      "span_mhz": "2447.775 - 2447.825 MHz",
+      "tier": "[S-BAND: 2-3 GHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[PROBABLE MESH / MULTI-NODE RELAY] (Score 40/100, ~1 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=40.0s) (Median \u0394t=40.01s, 2 bursts)"
+      ],
+      "verdict": "[ACTIVE SIGNAL]",
+      "signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links)",
+      "probable_device": "2.4 GHz Wi-Fi / Zigbee / FHSS Drone or IoT Packet Bursts",
+      "monitor_window_mhz": "2446:2449",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -46.49,
+        "avg_db": -47.34,
+        "std_db": 0.85,
+        "occupancy_pct": 0.0,
+        "window_persistence_pct": 4.3,
+        "burst_count": 2,
+        "median_pri_sec": 40.01,
+        "mean_pri_sec": 40.01,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 1,
+        "node_power_tiers_db": [
+          -46.5
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 11:06:40.755154",
+      "last_seen": "2026-11-18 11:07:20.765300"
+    },
+    {
+      "center_mhz": 1225.0,
+      "span_mhz": "1225.000 - 1225.000 MHz",
+      "tier": "[L-BAND: 1-2 GHz]",
+      "primary_flag": "24/7_CONTINUOUS",
+      "flag_types": [
+        "24/7_CONTINUOUS",
+        "COMPLIANCE_ALERT"
+      ],
+      "flag_reasons": [
+        "Round-the-Clock 24/7 Carrier (99.8% occupancy, 100% window persistence)",
+        "Regulatory/Technical Flag: [ILLEGAL / NON-COMPLIANT 24/7 TX]"
+      ],
+      "verdict": "[ILLEGAL / NON-COMPLIANT 24/7 TX]",
+      "signature": "GNSS L5/L2 / Aviation DME Pulsed Navigation Transponders",
+      "probable_device": "Continuous 1-3 GHz Carrier (Base Station Downlink / Continuous Video / Beacon)",
+      "monitor_window_mhz": "1224:1226",
+      "characteristics": {
+        "est_bw_khz": 50.0,
+        "peak_db": -46.67,
+        "avg_db": -47.76,
+        "std_db": 0.41,
+        "occupancy_pct": 99.8,
+        "window_persistence_pct": 100.0,
+        "burst_count": 509,
+        "median_pri_sec": 0.246,
+        "mean_pri_sec": 0.246,
+        "pri_jitter_sec": 0.015,
+        "estimated_mesh_nodes": 1,
+        "node_power_tiers_db": [
+          -46.7
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 08:40:22.046272",
+      "last_seen": "2026-11-18 08:42:27.130271"
+    },
+    {
+      "center_mhz": 917.0,
+      "span_mhz": "916.950 - 917.000 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "MESH_TOPOLOGY",
+      "flag_types": [
+        "MESH_TOPOLOGY",
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "[PROBABLE MESH / MULTI-NODE RELAY] (Score 40/100, ~1 nodes)",
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=17.0s) (Median \u0394t=17.05s, 3 bursts)"
+      ],
+      "verdict": "[COMPLIANT / TRUE DEVICE]",
+      "signature": "915 MHz ISM Mesh (US/AU LoRa / Zigbee / Z-Wave) OR UK/EU GSM-R Railway",
+      "probable_device": "Automated Periodic Telemetry Beacon (Fires every ~17.0s)",
+      "monitor_window_mhz": "916:918",
+      "characteristics": {
+        "est_bw_khz": 100.0,
+        "peak_db": -47.0,
+        "avg_db": -48.5,
+        "std_db": 1.17,
+        "occupancy_pct": 2.6,
+        "window_persistence_pct": 8.3,
+        "burst_count": 3,
+        "median_pri_sec": 17.046,
+        "mean_pri_sec": 17.046,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 1,
+        "node_power_tiers_db": [
+          -47.0
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-16 22:01:43.697877",
+      "last_seen": "2026-11-16 22:49:03.159919"
+    },
+    {
+      "center_mhz": 894.4,
+      "span_mhz": "894.350 - 894.500 MHz",
+      "tier": "[MODERATE: 860-930 MHz]",
+      "primary_flag": "PULSED_SIGNAL",
+      "flag_types": [
+        "PULSED_SIGNAL"
+      ],
+      "flag_reasons": [
+        "Pulsed Cadence: BURSTY / EVENT-DRIVEN PULSES (Med \u0394t=395.1s) (Median \u0394t=395.07s, 2 bursts)"
+      ],
+      "verdict": "[COMPLIANT / TRUE DEVICE]",
+      "signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "probable_device": "Mobile Phone / Cellular IoT Modem Uplink Burst (or US915 LoRa/Z-Wave)",
+      "monitor_window_mhz": "893:896",
+      "characteristics": {
+        "est_bw_khz": 200.0,
+        "peak_db": -48.49,
+        "avg_db": -49.19,
+        "std_db": 0.7,
+        "occupancy_pct": 1.8,
+        "window_persistence_pct": 5.6,
+        "burst_count": 2,
+        "median_pri_sec": 395.071,
+        "mean_pri_sec": 395.071,
+        "pri_jitter_sec": 0.0,
+        "estimated_mesh_nodes": 1,
+        "node_power_tiers_db": [
+          -48.5
+        ],
+        "relay_echoes": 0
+      },
+      "first_seen": "2026-11-18 09:49:07.011988",
+      "last_seen": "2026-11-18 09:55:42.083044"
+    }
+  ],
+  "characteristic_matches": [
+    {
+      "candidate_mhz": 888.75,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -26.15,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 16.948,
+      "candidate_occupancy_pct": 4.4,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 889.35,
+      "matched_target_flag": "PULSED_SIGNAL",
+      "similarity_pct": 100.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=16.95s matches target \u0394t=16.36s (96.5% timing match)",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 7.38 dB vs 7.58 dB)",
+        "Similar Transmitter RSSI Level (Peak -26.1 dB vs -28.1 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-18 09:37:40.783834",
+      "last_seen": "2026-11-18 10:23:51.028153"
+    },
+    {
+      "candidate_mhz": 889.35,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -28.11,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 16.358,
+      "candidate_occupancy_pct": 3.5,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 888.75,
+      "matched_target_flag": "PULSED_SIGNAL",
+      "similarity_pct": 100.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=16.36s matches target \u0394t=16.95s (96.5% timing match)",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 7.58 dB vs 7.38 dB)",
+        "Similar Transmitter RSSI Level (Peak -28.1 dB vs -26.1 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-18 09:37:40.783834",
+      "last_seen": "2026-11-18 10:15:52.359181"
+    },
+    {
+      "candidate_mhz": 2449.35,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -46.15,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 779.93,
+      "candidate_occupancy_pct": 0.1,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 20 (2450 MHz) [Primary Non-WiFi Mesh Ch]",
+      "matched_target_mhz": 2417.75,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 100.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=779.93s matches target \u0394t=799.94s (97.5% timing match)",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 1.19 dB vs 2.14 dB)",
+        "Similar Transmitter RSSI Level (Peak -46.1 dB vs -43.9 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:37:40.980615",
+      "last_seen": "2026-11-18 10:32:20.613438"
+    },
+    {
+      "candidate_mhz": 2443.95,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -28.27,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 43.039,
+      "candidate_occupancy_pct": 0.2,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 19 (2445 MHz)",
+      "matched_target_mhz": 2447.8,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 90.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=43.04s matches target \u0394t=40.01s (93.0% timing match)",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:58:13.532243",
+      "last_seen": "2026-11-18 20:42:09.334701"
+    },
+    {
+      "candidate_mhz": 2429.55,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -32.78,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 40.895,
+      "candidate_occupancy_pct": 0.6,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 16 (2430 MHz)",
+      "matched_target_mhz": 2443.95,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 90.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=40.90s matches target \u0394t=43.04s (95.0% timing match)",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:45:40.689042",
+      "last_seen": "2026-11-18 20:43:14.196578"
+    },
+    {
+      "candidate_mhz": 892.5,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -33.39,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 33.741,
+      "candidate_occupancy_pct": 4.4,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 2429.9,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 90.0,
+      "relationship": "CROSS-BAND CHARACTERISTIC MATCH",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=33.74s matches target \u0394t=34.97s (96.5% timing match)",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 5.00 dB vs 5.47 dB)",
+        "Similar Transmitter RSSI Level (Peak -33.4 dB vs -30.4 dB -> likely same distance/source)"
+      ],
+      "first_seen": "2026-11-18 10:12:57.512969",
+      "last_seen": "2026-11-18 11:08:27.111728"
+    },
+    {
+      "candidate_mhz": 2418.8,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -44.06,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 20.074,
+      "candidate_occupancy_pct": 0.0,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 14 (2420 MHz)",
+      "matched_target_mhz": 2447.8,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 90.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Harmonic 2x Pulse Cadence: \u0394t=20.07s is 2x/0.5x of target \u0394t=40.01s",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 1.29 dB vs 0.85 dB)",
+        "Similar Transmitter RSSI Level (Peak -44.1 dB vs -46.5 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 11:06:40.263630",
+      "last_seen": "2026-11-18 11:07:00.337517"
+    },
+    {
+      "candidate_mhz": 2423.7,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -44.3,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 80.001,
+      "candidate_occupancy_pct": 0.1,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links)",
+      "matched_target_mhz": 2447.8,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 90.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Harmonic 2x Pulse Cadence: \u0394t=80.00s is 2x/0.5x of target \u0394t=40.01s",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 2.36 dB vs 0.85 dB)",
+        "Similar Transmitter RSSI Level (Peak -44.3 dB vs -46.5 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:52:20.575159",
+      "last_seen": "2026-11-18 11:08:40.341215"
+    },
+    {
+      "candidate_mhz": 903.4,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -24.44,
+      "candidate_bw_khz": 950.0,
+      "candidate_pri_sec": 8.366,
+      "candidate_occupancy_pct": 3.5,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 904.45,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 89.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=8.37s matches target \u0394t=8.37s (100.0% timing match)",
+        "Comparable Bandwidth (~950 kHz vs ~1200 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 6.99 dB vs 7.09 dB)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])",
+        "Shared Mesh Network Behavior (US915 Meshtastic / LoRa / Z-Wave / Zigbee 915 Mesh)"
+      ],
+      "first_seen": "2026-11-18 09:37:25.251644",
+      "last_seen": "2026-11-18 10:15:35.666884"
+    },
+    {
+      "candidate_mhz": 904.45,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -29.49,
+      "candidate_bw_khz": 1200.0,
+      "candidate_pri_sec": 8.366,
+      "candidate_occupancy_pct": 3.5,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 903.4,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 89.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=8.37s matches target \u0394t=8.37s (100.0% timing match)",
+        "Comparable Bandwidth (~1200 kHz vs ~950 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 7.09 dB vs 6.99 dB)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])",
+        "Shared Mesh Network Behavior (US915 Meshtastic / LoRa / Z-Wave / Zigbee 915 Mesh)"
+      ],
+      "first_seen": "2026-11-18 09:37:25.251644",
+      "last_seen": "2026-11-18 10:15:35.666884"
+    },
+    {
+      "candidate_mhz": 2474.95,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -41.58,
+      "candidate_bw_khz": 3000.0,
+      "candidate_pri_sec": 749.903,
+      "candidate_occupancy_pct": 0.1,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 25 (2475 MHz) [Primary Non-WiFi Mesh Ch]",
+      "matched_target_mhz": 2417.75,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 85.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=749.90s matches target \u0394t=799.94s (93.7% timing match)",
+        "Matching Amplitude Envelope Variance (StdDev 2.92 dB vs 2.14 dB)",
+        "Similar Transmitter RSSI Level (Peak -41.6 dB vs -43.9 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 08:41:20.931465",
+      "last_seen": "2026-11-18 10:21:41.225611"
+    },
+    {
+      "candidate_mhz": 881.4,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -20.99,
+      "candidate_bw_khz": 1050.0,
+      "candidate_pri_sec": 16.87,
+      "candidate_occupancy_pct": 3.5,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 903.4,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 80.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Harmonic 2x Pulse Cadence: \u0394t=16.87s is 2x/0.5x of target \u0394t=8.37s",
+        "Matching Channel Bandwidth (~1050 kHz vs target ~950 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 7.92 dB vs 6.99 dB)",
+        "Similar Transmitter RSSI Level (Peak -21.0 dB vs -24.4 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-18 11:07:53.371104",
+      "last_seen": "2026-11-18 11:08:27.188631"
+    },
+    {
+      "candidate_mhz": 892.95,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -34.7,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 15.768,
+      "candidate_occupancy_pct": 1.8,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 888.75,
+      "matched_target_flag": "PULSED_SIGNAL",
+      "similarity_pct": 80.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=15.77s matches target \u0394t=16.95s (93.0% timing match)",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-18 10:15:19.643118",
+      "last_seen": "2026-11-18 10:15:35.411313"
+    },
+    {
+      "candidate_mhz": 892.05,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -36.6,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 0.16,
+      "candidate_occupancy_pct": 2.6,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 880.8,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 80.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=0.16s matches target \u0394t=0.16s (100.0% timing match)",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-18 10:15:19.643118",
+      "last_seen": "2026-11-18 11:07:53.530674"
+    },
+    {
+      "candidate_mhz": 2414.0,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -38.63,
+      "candidate_bw_khz": 2500.0,
+      "candidate_pri_sec": 332.346,
+      "candidate_occupancy_pct": 0.1,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 13 (2415 MHz) | Wi-Fi Center Ch 1 (2412 MHz)",
+      "matched_target_mhz": 2459.8,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 80.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Similar Pulse Interval: \u0394t=332.35s vs target \u0394t=300.13s",
+        "Comparable Bandwidth (~2500 kHz vs ~4400 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 3.51 dB vs 2.97 dB)",
+        "Similar Transmitter RSSI Level (Peak -38.6 dB vs -39.0 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 10:23:00.322049",
+      "last_seen": "2026-11-18 20:43:17.794366"
+    },
+    {
+      "candidate_mhz": 2459.8,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -38.99,
+      "candidate_bw_khz": 4400.0,
+      "candidate_pri_sec": 300.126,
+      "candidate_occupancy_pct": 0.1,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 22 (2460 MHz) | Wi-Fi Center Ch 11 (2462 MHz)",
+      "matched_target_mhz": 2414.0,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 80.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Similar Pulse Interval: \u0394t=300.13s vs target \u0394t=332.35s",
+        "Comparable Bandwidth (~4400 kHz vs ~2500 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 2.97 dB vs 3.51 dB)",
+        "Similar Transmitter RSSI Level (Peak -39.0 dB vs -38.6 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:47:01.122475",
+      "last_seen": "2026-11-18 20:41:42.929913"
+    },
+    {
+      "candidate_mhz": 868.4,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -20.39,
+      "candidate_bw_khz": 450.0,
+      "candidate_pri_sec": 587.694,
+      "candidate_occupancy_pct": 4.4,
+      "candidate_signature": "868 MHz Core ISM (LoRaWAN EU868 / Zigbee 868 Mesh / Smart Meters)",
+      "matched_target_mhz": 870.2,
+      "matched_target_flag": "PULSED_SIGNAL",
+      "similarity_pct": 79.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=587.69s matches target \u0394t=620.94s (94.6% timing match)",
+        "Comparable Bandwidth (~450 kHz vs ~350 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 4.41 dB vs 5.81 dB)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-18 10:14:09.708478",
+      "last_seen": "2026-11-18 11:06:56.680580"
+    },
+    {
+      "candidate_mhz": 870.2,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -30.7,
+      "candidate_bw_khz": 350.0,
+      "candidate_pri_sec": 620.937,
+      "candidate_occupancy_pct": 5.3,
+      "candidate_signature": "870-876 MHz Short-Range Devices / Smart Grid Mesh (or US/AU B5 Cellular DL)",
+      "matched_target_mhz": 868.4,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 79.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=620.94s matches target \u0394t=587.69s (94.6% timing match)",
+        "Comparable Bandwidth (~350 kHz vs ~450 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 5.81 dB vs 4.41 dB)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-18 09:37:25.015766",
+      "last_seen": "2026-11-18 10:23:35.102570"
+    },
+    {
+      "candidate_mhz": 876.95,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -37.98,
+      "candidate_bw_khz": 150.0,
+      "candidate_pri_sec": 16.948,
+      "candidate_occupancy_pct": 1.8,
+      "candidate_signature": "870-876 MHz Short-Range Devices / Smart Grid Mesh (or US/AU B5 Cellular DL)",
+      "matched_target_mhz": 917.0,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 79.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=16.95s matches target \u0394t=17.05s (99.4% timing match)",
+        "Comparable Bandwidth (~150 kHz vs ~100 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 1.86 dB vs 1.17 dB)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-18 09:37:24.307899",
+      "last_seen": "2026-11-18 09:37:41.255722"
+    },
+    {
+      "candidate_mhz": 917.0,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -47.0,
+      "candidate_bw_khz": 100.0,
+      "candidate_pri_sec": 17.046,
+      "candidate_occupancy_pct": 2.6,
+      "candidate_signature": "915 MHz ISM Mesh (US/AU LoRa / Zigbee / Z-Wave) OR UK/EU GSM-R Railway",
+      "matched_target_mhz": 876.95,
+      "matched_target_flag": "PULSED_SIGNAL",
+      "similarity_pct": 79.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=17.05s matches target \u0394t=16.95s (99.4% timing match)",
+        "Comparable Bandwidth (~100 kHz vs ~150 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 1.17 dB vs 1.86 dB)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-16 22:01:43.697877",
+      "last_seen": "2026-11-16 22:49:03.159919"
+    },
+    {
+      "candidate_mhz": 2416.25,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -43.53,
+      "candidate_bw_khz": 650.0,
+      "candidate_pri_sec": 669.882,
+      "candidate_occupancy_pct": 0.1,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links)",
+      "matched_target_mhz": 2480.2,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 77.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=669.88s matches target \u0394t=681.32s (98.3% timing match)",
+        "Comparable Bandwidth (~650 kHz vs ~1100 kHz)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:55:20.514954",
+      "last_seen": "2026-11-18 11:06:40.263630"
+    },
+    {
+      "candidate_mhz": 890.25,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -4.21,
+      "candidate_bw_khz": 4750.0,
+      "candidate_pri_sec": 33.581,
+      "candidate_occupancy_pct": 15.8,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 897.05,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 75.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=33.58s matches target \u0394t=32.60s (97.1% timing match)",
+        "Matching Amplitude Envelope Variance (StdDev 9.61 dB vs 9.30 dB)",
+        "Similar Transmitter RSSI Level (Peak -4.2 dB vs -5.8 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-16 21:51:38.611341",
+      "last_seen": "2026-11-18 11:08:27.111728"
+    },
+    {
+      "candidate_mhz": 897.05,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -5.85,
+      "candidate_bw_khz": 650.0,
+      "candidate_pri_sec": 32.598,
+      "candidate_occupancy_pct": 17.5,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 890.25,
+      "matched_target_flag": "PULSED_SIGNAL",
+      "similarity_pct": 75.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=32.60s matches target \u0394t=33.58s (97.1% timing match)",
+        "Matching Amplitude Envelope Variance (StdDev 9.30 dB vs 9.61 dB)",
+        "Similar Transmitter RSSI Level (Peak -5.8 dB vs -4.2 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-16 21:50:49.419499",
+      "last_seen": "2026-11-18 10:26:35.139027"
+    },
+    {
+      "candidate_mhz": 2456.2,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -45.29,
+      "candidate_bw_khz": 4000.0,
+      "candidate_pri_sec": 919.755,
+      "candidate_occupancy_pct": 0.1,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 21 (2455 MHz)",
+      "matched_target_mhz": 2474.95,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 72.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Similar Pulse Interval: \u0394t=919.75s vs target \u0394t=749.90s",
+        "Comparable Bandwidth (~4000 kHz vs ~3000 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 1.46 dB vs 2.92 dB)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:58:41.195563",
+      "last_seen": "2026-11-18 10:32:40.707155"
+    },
+    {
+      "candidate_mhz": 2434.1,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -25.34,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 1.219,
+      "candidate_occupancy_pct": 6.5,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 17 (2435 MHz)",
+      "matched_target_mhz": 898.2,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 71.0,
+      "relationship": "CROSS-BAND CHARACTERISTIC MATCH",
+      "matching_traits": [
+        "Similar Pulse Interval: \u0394t=1.22s vs target \u0394t=1.51s",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Similar Transmitter RSSI Level (Peak -25.3 dB vs -22.7 dB -> likely same distance/source)",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:37:37.362796",
+      "last_seen": "2026-11-18 20:43:20.822274"
+    },
+    {
+      "candidate_mhz": 2454.1,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -46.76,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 239.974,
+      "candidate_occupancy_pct": 0.1,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 21 (2455 MHz)",
+      "matched_target_mhz": 891.5,
+      "matched_target_flag": "PULSED_SIGNAL",
+      "similarity_pct": 70.0,
+      "relationship": "CROSS-BAND CHARACTERISTIC MATCH",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=239.97s matches target \u0394t=255.69s (93.9% timing match)",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)"
+      ],
+      "first_seen": "2026-11-18 09:51:01.124957",
+      "last_seen": "2026-11-18 11:08:00.822574"
+    },
+    {
+      "candidate_mhz": 898.2,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -22.74,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 1.514,
+      "candidate_occupancy_pct": 8.8,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 2439.95,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 68.0,
+      "relationship": "CROSS-BAND CHARACTERISTIC MATCH",
+      "matching_traits": [
+        "Harmonic 2x Pulse Cadence: \u0394t=1.51s is 2x/0.5x of target \u0394t=0.74s",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Similar Transmitter RSSI Level (Peak -22.7 dB vs -25.6 dB -> likely same distance/source)",
+        "Shared Mesh Network Behavior (Non-standard / Custom Mesh)"
+      ],
+      "first_seen": "2026-11-18 09:49:04.535979",
+      "last_seen": "2026-11-18 10:15:52.359181"
+    },
+    {
+      "candidate_mhz": 2438.9,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -23.58,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 0.806,
+      "candidate_occupancy_pct": 14.1,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 18 (2440 MHz) | Wi-Fi Center Ch 6 (2437 MHz)",
+      "matched_target_mhz": 2436.15,
+      "matched_target_flag": "24/7_CONTINUOUS",
+      "similarity_pct": 68.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Similar Pulse Interval: \u0394t=0.81s vs target \u0394t=0.63s",
+        "Matching Amplitude Envelope Variance (StdDev 2.63 dB vs 2.60 dB)",
+        "Similar Transmitter RSSI Level (Peak -23.6 dB vs -21.8 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:37:26.922897",
+      "last_seen": "2026-11-18 20:42:51.055713"
+    },
+    {
+      "candidate_mhz": 2440.95,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -26.18,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 0.767,
+      "candidate_occupancy_pct": 2.6,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 18 (2440 MHz)",
+      "matched_target_mhz": 898.2,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 68.0,
+      "relationship": "CROSS-BAND CHARACTERISTIC MATCH",
+      "matching_traits": [
+        "Harmonic 2x Pulse Cadence: \u0394t=0.77s is 2x/0.5x of target \u0394t=1.51s",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Similar Transmitter RSSI Level (Peak -26.2 dB vs -22.7 dB -> likely same distance/source)",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:48:47.409929",
+      "last_seen": "2026-11-18 20:42:09.334701"
+    },
+    {
+      "candidate_mhz": 2469.55,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -31.05,
+      "candidate_bw_khz": 2750.0,
+      "candidate_pri_sec": 0.757,
+      "candidate_occupancy_pct": 1.2,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 24 (2470 MHz)",
+      "matched_target_mhz": 2439.95,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 65.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=0.76s matches target \u0394t=0.74s (97.4% timing match)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 11:09:01.103202",
+      "last_seen": "2026-11-18 20:43:15.219088"
+    },
+    {
+      "candidate_mhz": 904.9,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -40.19,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 8.366,
+      "candidate_occupancy_pct": 2.6,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 903.4,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 65.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=8.37s matches target \u0394t=8.37s (100.0% timing match)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])",
+        "Shared Mesh Network Behavior (US915 Meshtastic / LoRa / Z-Wave / Zigbee 915 Mesh)"
+      ],
+      "first_seen": "2026-11-18 10:15:18.935313",
+      "last_seen": "2026-11-18 10:15:35.666884"
+    },
+    {
+      "candidate_mhz": 2421.0,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -41.5,
+      "candidate_bw_khz": 3400.0,
+      "candidate_pri_sec": 0.0,
+      "candidate_occupancy_pct": 0.0,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 14 (2420 MHz)",
+      "matched_target_mhz": 2474.95,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 65.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Matching Channel Bandwidth (~3400 kHz vs target ~3000 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 3.95 dB vs 2.92 dB)",
+        "Similar Transmitter RSSI Level (Peak -41.5 dB vs -41.6 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:55:40.510481",
+      "last_seen": "2026-11-18 11:07:00.337517"
+    },
+    {
+      "candidate_mhz": 2426.05,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -41.96,
+      "candidate_bw_khz": 3900.0,
+      "candidate_pri_sec": 71.547,
+      "candidate_occupancy_pct": 0.1,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> BLE Mesh/Beacon Adv Ch 38 (2426 MHz) | Zigbee/Thread Mesh Ch 15 (2425 MHz) [Primary Non-WiFi Mesh Ch]",
+      "matched_target_mhz": 2459.8,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 65.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Matching Channel Bandwidth (~3900 kHz vs target ~4400 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 2.22 dB vs 2.97 dB)",
+        "Similar Transmitter RSSI Level (Peak -42.0 dB vs -39.0 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:49:20.637063",
+      "last_seen": "2026-11-18 11:07:40.427527"
+    },
+    {
+      "candidate_mhz": 2464.15,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -42.72,
+      "candidate_bw_khz": 3500.0,
+      "candidate_pri_sec": 0.0,
+      "candidate_occupancy_pct": 0.0,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 23 (2465 MHz) | Wi-Fi Center Ch 11 (2462 MHz)",
+      "matched_target_mhz": 2421.0,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 65.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Matching Channel Bandwidth (~3500 kHz vs target ~3400 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 3.48 dB vs 3.95 dB)",
+        "Similar Transmitter RSSI Level (Peak -42.7 dB vs -41.5 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:53:41.226801",
+      "last_seen": "2026-11-18 20:42:19.873235"
+    },
+    {
+      "candidate_mhz": 905.35,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -32.9,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 0.649,
+      "candidate_occupancy_pct": 1.8,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 2439.95,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 63.0,
+      "relationship": "CROSS-BAND CHARACTERISTIC MATCH",
+      "matching_traits": [
+        "Similar Pulse Interval: \u0394t=0.65s vs target \u0394t=0.74s",
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Shared Mesh Network Behavior (US915 Meshtastic / LoRa / Z-Wave / Zigbee 915 Mesh)"
+      ],
+      "first_seen": "2026-11-18 10:15:35.018134",
+      "last_seen": "2026-11-18 10:15:35.666884"
+    },
+    {
+      "candidate_mhz": 2436.15,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -21.83,
+      "candidate_bw_khz": 19250.0,
+      "candidate_pri_sec": 0.629,
+      "candidate_occupancy_pct": 21.5,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> Zigbee/Thread Mesh Ch 17 (2435 MHz) | Wi-Fi Center Ch 6 (2437 MHz)",
+      "matched_target_mhz": 2439.95,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 60.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Similar Pulse Interval: \u0394t=0.63s vs target \u0394t=0.74s",
+        "Matching Amplitude Envelope Variance (StdDev 2.60 dB vs 2.78 dB)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 08:41:40.336884",
+      "last_seen": "2026-11-18 20:42:51.055713"
+    },
+    {
+      "candidate_mhz": 902.8,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -26.38,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 0.0,
+      "candidate_occupancy_pct": 0.9,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 898.2,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 57.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 4.73 dB vs 6.38 dB)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])",
+        "Shared Mesh Network Behavior (US915 Meshtastic / LoRa / Z-Wave / Zigbee 915 Mesh)"
+      ],
+      "first_seen": "2026-11-18 10:15:52.359181",
+      "last_seen": "2026-11-18 10:15:52.359181"
+    },
+    {
+      "candidate_mhz": 2431.65,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -30.4,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 55.955,
+      "candidate_occupancy_pct": 0.2,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links)",
+      "matched_target_mhz": 2439.95,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 57.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 4.43 dB vs 2.78 dB)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:45:43.991841",
+      "last_seen": "2026-11-18 20:43:02.458956"
+    },
+    {
+      "candidate_mhz": 2451.95,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -40.77,
+      "candidate_bw_khz": 4700.0,
+      "candidate_pri_sec": 0.0,
+      "candidate_occupancy_pct": 0.0,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links)",
+      "matched_target_mhz": 2456.2,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 57.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Matching Channel Bandwidth (~4700 kHz vs target ~4000 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 0.00 dB vs 1.46 dB)",
+        "Operates in same spectrum tier ([S-BAND: 2-3 GHz])",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 20:42:26.125456",
+      "last_seen": "2026-11-18 20:42:26.125456"
+    },
+    {
+      "candidate_mhz": 934.35,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -43.35,
+      "candidate_bw_khz": 200.0,
+      "candidate_pri_sec": 0.629,
+      "candidate_occupancy_pct": 4.4,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Cellular Base Station Downlink (UK/EU/AU 24/7 Carrier)",
+      "matched_target_mhz": 2436.15,
+      "matched_target_flag": "24/7_CONTINUOUS",
+      "similarity_pct": 57.0,
+      "relationship": "CROSS-BAND CHARACTERISTIC MATCH",
+      "matching_traits": [
+        "Identical Pulse Cadence: \u0394t=0.63s matches target \u0394t=0.63s (100.0% timing match)",
+        "Matching Amplitude Envelope Variance (StdDev 1.78 dB vs 2.60 dB)"
+      ],
+      "first_seen": "2026-11-18 09:55:37.128585",
+      "last_seen": "2026-11-18 09:55:42.043846"
+    },
+    {
+      "candidate_mhz": 890.8,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -22.51,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 174.846,
+      "candidate_occupancy_pct": 1.8,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 898.2,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 55.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 7.14 dB vs 6.38 dB)",
+        "Similar Transmitter RSSI Level (Peak -22.5 dB vs -22.7 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-18 10:12:57.512969",
+      "last_seen": "2026-11-18 10:15:52.359181"
+    },
+    {
+      "candidate_mhz": 880.8,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -26.13,
+      "candidate_bw_khz": 50.0,
+      "candidate_pri_sec": 0.16,
+      "candidate_occupancy_pct": 1.8,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 888.75,
+      "matched_target_flag": "PULSED_SIGNAL",
+      "similarity_pct": 55.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Matching Channel Bandwidth (~50 kHz vs target ~50 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 8.60 dB vs 7.38 dB)",
+        "Similar Transmitter RSSI Level (Peak -26.1 dB vs -26.1 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-18 11:07:53.371104",
+      "last_seen": "2026-11-18 11:07:53.530674"
+    },
+    {
+      "candidate_mhz": 2480.2,
+      "candidate_tier": "[S-BAND: 2-3 GHz]",
+      "candidate_peak_db": -30.47,
+      "candidate_bw_khz": 1100.0,
+      "candidate_pri_sec": 681.316,
+      "candidate_occupancy_pct": 0.0,
+      "candidate_signature": "2.4 GHz ISM (Zigbee/Thread Mesh, Wi-Fi Mesh, BLE Mesh, Video/Drone Links) -> BLE Mesh/Beacon Adv Ch 39 (2480 MHz) | Zigbee/Thread Mesh Ch 26 (2480 MHz) [Primary Non-WiFi Mesh Ch]",
+      "matched_target_mhz": 904.45,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 55.0,
+      "relationship": "CROSS-BAND CHARACTERISTIC MATCH",
+      "matching_traits": [
+        "Matching Channel Bandwidth (~1100 kHz vs target ~1200 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 5.64 dB vs 7.09 dB)",
+        "Similar Transmitter RSSI Level (Peak -30.5 dB vs -29.5 dB -> likely same distance/source)",
+        "Shared Mesh Network Behavior (2.4 GHz Mesh (Zigbee / Thread / Matter / BLE Mesh / Wi-Fi 802.11s))"
+      ],
+      "first_seen": "2026-11-18 09:52:29.953642",
+      "last_seen": "2026-11-18 10:15:12.584889"
+    },
+    {
+      "candidate_mhz": 897.8,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -47.56,
+      "candidate_bw_khz": 100.0,
+      "candidate_pri_sec": 0.0,
+      "candidate_occupancy_pct": 0.9,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 917.0,
+      "matched_target_flag": "MESH_TOPOLOGY",
+      "similarity_pct": 55.0,
+      "relationship": "IN-BAND CLONE / FREQUENCY HOPPER",
+      "matching_traits": [
+        "Matching Channel Bandwidth (~100 kHz vs target ~100 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 0.00 dB vs 1.17 dB)",
+        "Similar Transmitter RSSI Level (Peak -47.6 dB vs -47.0 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-18 11:08:43.506694",
+      "last_seen": "2026-11-18 11:08:43.506694"
+    },
+    {
+      "candidate_mhz": 896.05,
+      "candidate_tier": "[MODERATE: 860-930 MHz]",
+      "candidate_peak_db": -47.88,
+      "candidate_bw_khz": 200.0,
+      "candidate_pri_sec": 0.0,
+      "candidate_occupancy_pct": 0.9,
+      "candidate_signature": "E-GSM 900 / LTE Band 8 Uplink (UK/EU) OR US Band 5 DL (869-894) / US915 ISM",
+      "matched_target_mhz": 894.4,
+      "matched_target_flag": "PULSED_SIGNAL",
+      "similarity_pct": 55.0,
+      "relationship": "ADJACENT CHANNEL HOP / SIBLING NODE",
+      "matching_traits": [
+        "Matching Channel Bandwidth (~200 kHz vs target ~200 kHz)",
+        "Matching Amplitude Envelope Variance (StdDev 0.00 dB vs 0.70 dB)",
+        "Similar Transmitter RSSI Level (Peak -47.9 dB vs -48.5 dB -> likely same distance/source)",
+        "Operates in same spectrum tier ([MODERATE: 860-930 MHz])"
+      ],
+      "first_seen": "2026-11-18 10:15:18.935313",
+      "last_seen": "2026-11-18 10:15:18.935313"
+    }
+  ]
+}
